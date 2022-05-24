@@ -6,8 +6,7 @@ while True:
         f = open("C:/Users/jonjw/PycharmProjects/cs-361 - Assignment 7/time.txt", "r+")
         start_array = f.readline().split()
         end_array = f.readline().split()
-        # f.seek(0)
-        # f.truncate()
+        
         f.close()
         time_1 = datetime.strptime(start_array[0],"%H:%M:%S")
         time_2 = datetime.strptime(end_array[0],"%H:%M:%S")
